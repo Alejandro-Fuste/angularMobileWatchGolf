@@ -1,1 +1,1 @@
-# angularMobileWatchGolf
+# Golf App
