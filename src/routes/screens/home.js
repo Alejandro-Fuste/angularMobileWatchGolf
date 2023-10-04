@@ -1,11 +1,11 @@
-import { Button, View, Text } from "react-native";
+import { Button, View } from "react-native";
 
 const Home = ({ navigation }) => {
   return (
     <View>
       <Button
-        title="Go to Jane's profile"
-        onPress={() => navigation.navigate("Profile", { name: "Jane" })}
+        title="Go to Games screen"
+        onPress={() => navigation.navigate("Games", { name: "Games" })}
       />
     </View>
   );

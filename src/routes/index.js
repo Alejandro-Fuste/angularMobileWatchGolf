@@ -1,4 +1,4 @@
-import HomeScreen from "./homescreen";
-import ProfileScreen from "./profilescreen";
+import Home from "./screens/home";
+import Games from "./screens/games";
 
-export { HomeScreen, ProfileScreen };
+export { Home, Games };

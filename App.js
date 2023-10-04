@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { HomeScreen, ProfileScreen } from "./src/components";
+import { Home, Games } from "./src/routes";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,10 +16,10 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
-          component={HomeScreen}
+          component={Home}
           options={{ title: "Welcome" }}
         />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Games" component={Games} />
       </Stack.Navigator>
     </NavigationContainer>
   );
