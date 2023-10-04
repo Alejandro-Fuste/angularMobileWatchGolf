@@ -1,6 +1,6 @@
 import { Button, View, Text } from "react-native";
 
-const HomeScreen = ({ navigation }) => {
+const Home = ({ navigation }) => {
   return (
     <View>
       <Button
@@ -11,4 +11,4 @@ const HomeScreen = ({ navigation }) => {
   );
 };
 
-export default HomeScreen;
+export default Home;
