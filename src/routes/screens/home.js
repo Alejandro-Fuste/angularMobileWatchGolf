@@ -7,6 +7,11 @@ const Home = ({ navigation }) => {
         title="Go to Games screen"
         onPress={() => navigation.navigate("Games", { name: "Games" })}
       />
+
+      <Button
+        title="Go to History screen"
+        onPress={() => navigation.navigate("History", { name: "History" })}
+      />
     </View>
   );
 };

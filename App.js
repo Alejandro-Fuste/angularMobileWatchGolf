@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Home, Games } from "./src/routes";
+import { Home, Games, History } from "./src/routes";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +20,7 @@ export default function App() {
           options={{ title: "Welcome" }}
         />
         <Stack.Screen name="Games" component={Games} />
+        <Stack.Screen name="History" component={History} />
       </Stack.Navigator>
     </NavigationContainer>
   );
