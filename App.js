@@ -2,25 +2,25 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Home, Games, History } from "./src/routes";
+import { Home, Games, History, Game, Points, Score } from "./src/routes";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      {/* <View style={styles.container}>
-        <Text>It works! Hello Word!</Text>
-        <StatusBar style="auto" />
-      </View> */}
+      <StatusBar style="auto" />
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
           component={Home}
-          options={{ title: "Welcome" }}
+          options={{ title: "Home" }}
         />
         <Stack.Screen name="Games" component={Games} />
         <Stack.Screen name="History" component={History} />
+        <Stack.Screen name="Game" component={Game} />
+        <Stack.Screen name="Points" component={Points} />
+        <Stack.Screen name="Score" component={Score} />
       </Stack.Navigator>
     </NavigationContainer>
   );

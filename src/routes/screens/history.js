@@ -1,10 +1,17 @@
-import { Text } from "react-native";
+import { Button, Text, View } from "react-native";
 
 const History = ({ navigation, route }) => {
-  <Button
-    title="Go to Home screen"
-    onPress={() => navigation.navigate("Home", { name: "Home" })}
-  />;
+  return (
+    <View>
+      <Text>
+        This is the <Text>{route.params.name}</Text> page
+      </Text>
+      <Button
+        title="Go to Games screen"
+        onPress={() => navigation.navigate("Games", { name: "Games" })}
+      />
+    </View>
+  );
 };
 
 export default History;
